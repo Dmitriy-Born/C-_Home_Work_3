@@ -39,8 +39,8 @@ int Q = int.Parse(Console.ReadLine()!);
 double a = 1;
 while (a < Q){
     a = Math.Pow(a, 3);
-    Console.Write($"{a:f0}, ");
-    a = Math.Pow(a, 1/3f);
+    Console.Write($"{a:f0}, "); // без округления работает хуже
+    a = Math.Pow(a, 1/3f); //для чего 'f'?
     a++;
 }
 Console.WriteLine($"{Math.Pow(Q, 3)}");
